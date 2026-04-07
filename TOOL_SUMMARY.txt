@@ -1,0 +1,321 @@
+================================================================================
+                    CONTENT STRATEGY & HOOK GENERATOR TOOL
+                           Complete Documentation
+================================================================================
+
+OVERVIEW
+--------
+This tool extracts and codifies content creation frameworks from 11 expert video
+transcripts into a usable Python application. It helps content creators generate
+high-performing hooks, analyze scripts, and apply proven psychological principles.
+
+VERSION: 1.0.0
+DATE: 2026-04-07
+SOURCE: github.com/swordenkisk/content-strategy-tool
+
+================================================================================
+                              8 FRAMEWORKS INCLUDED
+================================================================================
+
+1. 4 HOOK MISTAKES (Callaway)
+   ---------------------------
+   The four critical mistakes that kill hook performance:
+   
+   • DELAY - Taking too long to get to the point
+   • CONFUSION - Unclear what the video is about  
+   • IRRELEVANCE - Doesn't match viewer intent
+   • DISINTEREST - Fails to create curiosity gap
+
+2. 3-STEP HOOK FORMULA (Callaway)
+   -------------------------------
+   Context Lean → Scroll Stop → Contrarian Snapback
+   
+   • Context Lean - Establish familiar ground quickly
+   • Scroll Stop - Pattern interrupt or curiosity gap
+   • Contrarian Snapback - Challenge expectation with 'but', 'except', 'here's why'
+
+3. 6-STAGE PSYCHOLOGY (Callaway)
+   ------------------------------
+   The psychological journey from pain to action:
+   
+   • Pain - Identify the problem (agitate)
+   • Trust - Establish credibility quickly
+   • Plan - Show the solution path
+   • Likability - Build connection/relatability
+   • Attention - Maintain with pattern interrupts
+   • Action - Clear CTA with low friction
+
+4. 5 STORYTELLING TECHNIQUES (Video 5 Analysis)
+   -------------------------------------------
+   Elements that make stories engaging and memorable:
+   
+   • Location - Ground the story in a specific place
+   • Action - Show, don't just tell
+   • Thought - Reveal internal dialogue
+   • Emotion - Connect through feelings
+   • Dialogue - Use direct quotes/conversations
+
+5. VIDEO STRUCTURE (Jessica Stansberry)
+   ------------------------------------
+   The 4-part structure for engaging videos:
+   
+   • Hook - First 3 seconds, stop the scroll
+   • Intro - 10-15 seconds, set expectations
+   • Meat - The valuable content (bulk of video)
+   • Outro - CTA and next steps
+
+6. SHORTS FORMULA (Jenny Hoyos)
+   -----------------------------
+   Optimization tactics for short-form content:
+   
+   • 34-second optimization - Sweet spot for retention
+   • Visual hooks - Change scene every 1.7 seconds
+   • Text overlays - Reinforce key points visually
+   • Pattern interrupts - Keep attention with cuts/zooms
+   • Loop potential - End that connects to beginning
+
+7. RETENTION TACTICS (Video 11 Analysis)
+   --------------------------------------
+   Techniques to keep viewers watching longer:
+   
+   • 2-second shot changes - Prevents scroll behavior
+   • Pattern interrupts - Visual/audio changes every 3-5 seconds
+   • Open loops - Promise payoff later in video
+   • Curiosity gaps - 'The reason why will shock you'
+   • Stakes escalation - Increase tension throughout
+
+8. CTA FRAMEWORK (Exposure Ninja)
+   -------------------------------
+   Call-to-action that converts:
+   
+   • High value - What's in it for them?
+   • Low risk - Remove friction and fear
+   • Sales alignment - Match buyer journey stage
+   • Urgency/scarcity - Reason to act now
+   • Single action - One clear next step
+
+================================================================================
+                              FEATURES
+================================================================================
+
+✅ HOOK GENERATOR
+   • 5 different framework options
+   • Contrarian, Curiosity Gap, Pain Agitation, Social Proof, How-To
+   • Plus Callaway's 3-Step Formula
+
+✅ SCRIPT ANALYZER
+   • Scores hooks 0-100
+   • Identifies 4 mistakes (Delay, Confusion, Irrelevance, Disinterest)
+   • Detects strengths (You-focus, contrast, specificity, power words)
+
+✅ AUTO-FIX
+   • Suggests improvements for weak hooks
+   • Generates 3 improved versions automatically
+
+✅ READABILITY CHECK
+   • Flesch-Kincaid Grade Level analysis
+   • Optimal range: 5-6 for social media content
+
+✅ BULK GENERATION
+   • Generate multiple variations for A/B testing
+   • Each labeled with framework used
+
+✅ FRAMEWORK LIBRARY
+   • Browse all 8 frameworks with examples
+   • Source attribution for each framework
+
+================================================================================
+                           INSTALLATION
+================================================================================
+
+METHOD 1: Direct Python (No Installation Required)
+--------------------------------------------------
+1. Extract the zip file
+2. Navigate to the directory:
+   cd content-strategy-tool
+
+3. Run the tool:
+   python main.py
+
+METHOD 2: Install as Package
+----------------------------
+1. Extract the zip file
+2. Navigate to the directory:
+   cd content-strategy-tool
+
+3. Install:
+   pip install -e .
+
+4. Run from anywhere:
+   content-strategy
+
+================================================================================
+                              USAGE
+================================================================================
+
+INTERACTIVE MODE
+----------------
+Run without arguments for interactive menu:
+
+    python main.py
+
+CLI MODE
+--------
+Generate hooks for a topic:
+    python main.py --topic "email marketing"
+
+Generate multiple variations (A/B testing):
+    python main.py --topic "fitness" --bulk 10
+
+Analyze a hook:
+    python main.py --analyze "Your hook text here"
+
+Analyze from file:
+    python main.py --analyze my_script.txt
+
+Enhance existing hook:
+    python main.py --enhance "Your weak hook here"
+
+List all frameworks:
+    python main.py --frameworks
+
+================================================================================
+                           SCORING SYSTEM
+================================================================================
+
+The analyzer scores hooks on a 0-100 scale across 5 dimensions:
+
+SCORE BREAKDOWN:
+----------------
+• Hook Strength (30 points)
+  - Strong opening words
+  - Contrast words present
+  - Curiosity gap created
+
+• Clarity (20 points)
+  - No weak filler phrases
+  - Clear value proposition
+
+• Engagement (20 points)
+  - You-focused language
+  - Emotional power words
+
+• Specificity (15 points)
+  - Numbers/currency present
+  - Concrete details
+
+• Readability (15 points)
+  - Grade level 5-6 = 15 points
+  - Grade level 7-8 = 12 points
+  - Grade level 9-10 = 8 points
+  - Grade level 11+ = 5 points
+
+GRADE SCALE:
+------------
+• 80-100 = A (Excellent)
+• 65-79  = B (Good)
+• 50-64  = C (Average)
+• 35-49  = D (Needs Work)
+• 0-34   = F (Weak)
+
+================================================================================
+                           FILE STRUCTURE
+================================================================================
+
+content-strategy-tool/
+│
+├── main.py                 # Main entry point (CLI + interactive)
+├── frameworks.py           # All 8 frameworks and templates
+├── hook_generator.py       # Hook generation logic
+├── script_analyzer.py      # Analysis and scoring engine
+├── setup.py               # Installation script
+│
+├── TOOL_SUMMARY.txt       # This documentation file
+├── EXAMPLE_OUTPUT.txt     # Usage examples and sample output
+│
+└── examples/              # Sample scripts (optional)
+    ├── weak_hook.txt
+    └── strong_hook.txt
+
+================================================================================
+                           REQUIREMENTS
+================================================================================
+
+• Python 3.7 or higher
+• No external dependencies (uses only standard library)
+• Works on Windows, macOS, and Linux
+
+================================================================================
+                           TIPS FOR BEST RESULTS
+================================================================================
+
+FOR HOOK GENERATION:
+--------------------
+1. Be specific with your topic ("email marketing" vs "marketing")
+2. Generate multiple variations and test them
+3. Use the 3-Step Formula for maximum impact
+4. Always include numbers when possible
+
+FOR SCRIPT ANALYSIS:
+--------------------
+1. Aim for grade level 5-6 for social media
+2. Fix all 4 mistakes before publishing
+3. Use "you/your" at least 2-3 times
+4. Include contrast words (but, except, however)
+5. Add specific numbers ($, %, days, steps)
+
+FOR A/B TESTING:
+----------------
+1. Generate 5+ variations
+2. Test different frameworks (contrarian vs social proof)
+3. Keep everything else constant
+4. Track which framework performs best for your audience
+
+================================================================================
+                           SOURCES
+================================================================================
+
+Frameworks extracted and codified from:
+• Callaway content strategy videos
+• Jenny Hoyos Shorts optimization
+• Jessica Stansberry video structure
+• Exposure Ninja CTA framework
+• Video 5 storytelling analysis
+• Video 11 retention tactics
+• MrBeast/Logan Paul retention data
+
+Total: 11 expert video transcripts analyzed
+
+================================================================================
+                           LICENSE
+================================================================================
+
+MIT License - Free to use, modify, and distribute.
+Attribution appreciated but not required.
+
+================================================================================
+                           SUPPORT
+================================================================================
+
+For issues, suggestions, or contributions:
+• GitHub: github.com/swordenkisk/content-strategy-tool
+• Email: contact@example.com
+
+================================================================================
+                           VERSION HISTORY
+================================================================================
+
+v1.0.0 (2026-04-07)
+-------------------
+• Initial release
+• 8 frameworks implemented
+• Hook generator with 6 frameworks
+• Script analyzer with 0-100 scoring
+• Auto-fix suggestions
+• Readability checker
+• Bulk generation for A/B testing
+• Interactive and CLI modes
+
+================================================================================
+                           END OF DOCUMENTATION
+================================================================================

@@ -1,0 +1,355 @@
+================================================================================
+                    CONTENT STRATEGY TOOL - EXAMPLE OUTPUT
+================================================================================
+
+This file demonstrates the tool's output for various use cases.
+
+================================================================================
+EXAMPLE 1: GENERATING HOOKS FOR A TOPIC
+================================================================================
+
+COMMAND:
+    python main.py --topic "email marketing"
+
+OUTPUT:
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║     🎯 CONTENT STRATEGY & HOOK GENERATOR TOOL 🎯            ║
+║                                                              ║
+║     Based on 11 expert video transcripts                     ║
+║     8 frameworks • 5 hook types • Auto-analysis              ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+🎯 Topic: email marketing
+
+📝 Generated Hooks:
+
+[Contrarian]
+   Everyone says email is dead, but I just made $10K with one email strategy
+
+[Curiosity Gap]
+   The real reason you're not succeeding at email marketing 
+   (it's not what you think)
+
+[Pain Agitation]
+   Struggling with low open rates? You're making this 1 mistake
+
+[Social Proof]
+   How I got 1M views on my email marketing content in 90 days (step-by-step)
+
+[How-To]
+   How to master email marketing faster in 30 days (even if you're a beginner)
+
+[3-Step Formula]
+   Everyone's talking about email marketing right now, but I need to warn 
+   you about something: the 'guru' advice about email marketing is actually 
+   hurting you
+
+================================================================================
+EXAMPLE 2: BULK GENERATION FOR A/B TESTING
+================================================================================
+
+COMMAND:
+    python main.py --topic "fitness" --bulk 5
+
+OUTPUT:
+🎯 Topic: fitness
+
+📊 Generating 5 hook variations...
+
+Variation 1 (Contrarian)
+   Stop doing fitness the traditional way. Here's why it's killing your results
+
+Variation 2 (Curiosity Gap)
+   I discovered the algorithm actually rewards consistency over quality 
+   and it changed everything
+
+Variation 3 (Pain Agitation)
+   The not seeing results that cost me $10,000 (and how to avoid it)
+
+Variation 4 (Social Proof)
+   From broke and struggling to financially free: My exact fitness process
+
+Variation 5 (How-To)
+   The fastest way to succeed at fitness without spending money
+
+================================================================================
+EXAMPLE 3: ANALYZING A WEAK HOOK
+================================================================================
+
+COMMAND:
+    python main.py --analyze "In this video, I want to talk about email 
+                              marketing and some things I think might help you."
+
+OUTPUT:
+╔══════════════════════════════════════════════════════════════╗
+📊 HOOK ANALYSIS RESULTS
+════════════════════════════════════════════════════════════════
+
+🎯 OVERALL SCORE: 25/100
+📋 GRADE: F (Weak)
+
+📈 DETAILED BREAKDOWN:
+   Hook Strength     [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 8
+   Clarity           [████░░░░░░░░░░░░░░░░░░░░░░░░░░] 10
+   Engagement        [██░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 5
+   Specificity       [░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0
+   Readability       [████████████░░░░░░░░░░░░░░░░░░] 12
+
+📖 READABILITY: Grade 6.2 (aim for 5-6 for social media)
+
+❌ MISTAKES DETECTED:
+   • DELAY: Taking too long to get to the point
+   • DISINTEREST: Weak language undermines confidence
+
+✅ STRENGTHS:
+   ⚠ No significant strengths detected
+
+💡 SUGGESTIONS:
+   → FIX DELAY: Start with the most interesting part. 
+     Delete 'In this video...'
+   → FIX DISINTEREST: Remove 'I think/maybe/perhaps'. Be definitive.
+   → ADD CONTRAST: Use 'but', 'except', or 'however' to create tension
+   → ADD SPECIFICITY: Include numbers ($, %, days, steps)
+   → ADD 'YOU': Replace 'I' statements with 'you/your' statements
+   → ADD NUMBERS: Specific numbers increase credibility and curiosity
+
+🔄 IMPROVED VERSIONS:
+   1. Everyone thinks email marketing is hard, but they're wrong
+   2. You want to talk about email marketing and some things you think 
+      might help you
+   3. The 3-step system to in this video, i want to talk about email 
+      marketing and some things i think might help you
+════════════════════════════════════════════════════════════════
+
+================================================================================
+EXAMPLE 4: ANALYZING A STRONG HOOK
+================================================================================
+
+COMMAND:
+    python main.py --analyze "Stop sending emails. This 3-word subject line 
+                              got me $50K in 30 days."
+
+OUTPUT:
+╔══════════════════════════════════════════════════════════════╗
+📊 HOOK ANALYSIS RESULTS
+════════════════════════════════════════════════════════════════
+
+🎯 OVERALL SCORE: 92/100
+📋 GRADE: A (Excellent)
+
+📈 DETAILED BREAKDOWN:
+   Hook Strength     [██████████░░░░░░░░░░░░░░░░░░░░] 30
+   Clarity           [████████████████████░░░░░░░░░░] 20
+   Engagement        [████████████████████░░░░░░░░░░] 20
+   Specificity       [███████████████░░░░░░░░░░░░░░░] 15
+   Readability       [███████████████░░░░░░░░░░░░░░░] 15
+
+📖 READABILITY: Grade 4.8 (aim for 5-6 for social media)
+
+❌ MISTAKES DETECTED:
+   ✓ No major mistakes detected!
+
+✅ STRENGTHS:
+   • AUDIENCE FOCUS: Uses 'you/your' 2 times (engaging)
+   • SPECIFICITY: Includes concrete numbers ($50K, 30, 3)
+   • POWER WORDS: Uses emotional triggers (stop)
+   • LENGTH: 14 words (optimal range)
+
+💡 SUGGESTIONS:
+   → ADD CONTRAST: Use 'but', 'except', or 'however' to create tension
+   → ADD 'YOU': Replace 'I' statements with 'you/your' statements
+
+🔄 IMPROVED VERSIONS:
+   1. Everyone thinks stop sending emails. this 3-word subject line got 
+      me $50k in 30 days., but they're wrong
+   2. You sending emails. this 3-word subject line got you $50k in 30 days.
+   3. The 3-step system to stop sending emails. this 3-word subject line 
+      got me $50k in 30 days.
+════════════════════════════════════════════════════════════════
+
+================================================================================
+EXAMPLE 5: ENHANCING AN EXISTING HOOK
+================================================================================
+
+COMMAND:
+    python main.py --enhance "Email marketing is important for business"
+
+OUTPUT:
+✨ Enhancing hook...
+
+Original: Email marketing is important for business
+Enhanced: The shocking truth: Email marketing is important for business
+
+📊 Analysis Comparison:
+   Original:  35/100 (D (Needs Work))
+   Enhanced:  48/100 (C (Average))
+
+================================================================================
+EXAMPLE 6: LISTING ALL FRAMEWORKS
+================================================================================
+
+COMMAND:
+    python main.py --frameworks
+
+OUTPUT:
+📚 CONTENT STRATEGY FRAMEWORKS
+
+============================================================
+
+🎯 4 Hook Mistakes
+   Source: Callaway
+   The four critical mistakes that kill hook performance
+
+   Key Components:
+      • DELAY - Taking too long to get to the point
+      • CONFUSION - Unclear what the video is about
+      • IRRELEVANCE - Doesn't match viewer intent
+      • DISINTEREST - Fails to create curiosity gap
+
+🎯 3-Step Hook Formula
+   Source: Callaway
+   Context Lean → Scroll Stop → Contrarian Snapback
+
+   Key Components:
+      • Context Lean - Establish familiar ground quickly
+      • Scroll Stop - Pattern interrupt or curiosity gap
+      • Contrarian Snapback - Challenge expectation with 
+        'but', 'except', 'here's why'
+
+🎯 6-Stage Psychology
+   Source: Callaway
+   The psychological journey from pain to action
+
+   Key Components:
+      • Pain - Identify the problem (agitate)
+      • Trust - Establish credibility quickly
+      • Plan - Show the solution path
+      • Likability - Build connection/relatability
+      • Attention - Maintain with pattern interrupts
+      • Action - Clear CTA with low friction
+
+🎯 5 Storytelling Techniques
+   Source: Video 5 Analysis
+   Elements that make stories engaging and memorable
+
+   Key Components:
+      • Location - Ground the story in a specific place
+      • Action - Show, don't just tell
+      • Thought - Reveal internal dialogue
+      • Emotion - Connect through feelings
+      • Dialogue - Use direct quotes/conversations
+
+🎯 Video Structure
+   Source: Jessica Stansberry
+   The 4-part structure for engaging videos
+
+   Key Components:
+      • Hook - First 3 seconds, stop the scroll
+      • Intro - 10-15 seconds, set expectations
+      • Meat - The valuable content (bulk of video)
+      • Outro - CTA and next steps
+
+🎯 Shorts Formula
+   Source: Jenny Hoyos
+   Optimization tactics for short-form content
+
+   Key Components:
+      • 34-second optimization - Sweet spot for retention
+      • Visual hooks - Change scene every 1.7 seconds
+      • Text overlays - Reinforce key points visually
+      • Pattern interrupts - Keep attention with cuts/zooms
+      • Loop potential - End that connects to beginning
+
+🎯 Retention Tactics
+   Source: Video 11 Analysis
+   Techniques to keep viewers watching longer
+
+   Key Components:
+      • 2-second shot changes - Prevents scroll behavior
+      • Pattern interrupts - Visual/audio changes every 3-5 seconds
+      • Open loops - Promise payoff later in video
+      • Curiosity gaps - 'The reason why will shock you'
+      • Stakes escalation - Increase tension throughout
+
+🎯 CTA Framework
+   Source: Exposure Ninja
+   Call-to-action that converts
+
+   Key Components:
+      • High value - What's in it for them?
+      • Low risk - Remove friction and fear
+      • Sales alignment - Match buyer journey stage
+      • Urgency/scarcity - Reason to act now
+      • Single action - One clear next step
+
+============================================================
+
+================================================================================
+EXAMPLE 7: INTERACTIVE MODE
+================================================================================
+
+COMMAND:
+    python main.py
+
+OUTPUT:
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║     🎯 CONTENT STRATEGY & HOOK GENERATOR TOOL 🎯            ║
+║                                                              ║
+║     Based on 11 expert video transcripts                     ║
+║     8 frameworks • 5 hook types • Auto-analysis              ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+Choose an option:
+
+  [1] Generate Hooks for a Topic
+  [2] Bulk Generate (A/B Testing)
+  [3] Analyze a Script/Hook
+  [4] Browse Frameworks
+  [5] Enhance Existing Hook
+  [0] Exit
+
+Enter choice (0-5): 1
+
+Enter topic (e.g., 'email marketing'): productivity
+
+Generating hooks for: productivity
+
+[Contrarian]
+   Everyone says you need to wake up at 5am, but I proved everyone wrong in 30 days
+
+[Curiosity Gap]
+   The real reason you're not succeeding at productivity (it's not what you think)
+
+[Pain Agitation]
+   Struggling with feeling overwhelmed? You're making this 1 mistake
+
+[Social Proof]
+   How I built a 6-figure productivity business in 90 days (step-by-step)
+
+[How-To]
+   How to get results from productivity in 30 days (even if you're a beginner)
+
+[3-Step Formula]
+   If you're trying to grow with productivity, but there's a massive problem: 
+   you're following the wrong productivity strategy
+
+Choose an option:
+
+  [1] Generate Hooks for a Topic
+  [2] Bulk Generate (A/B Testing)
+  [3] Analyze a Script/Hook
+  [4] Browse Frameworks
+  [5] Enhance Existing Hook
+  [0] Exit
+
+Enter choice (0-5): 0
+
+Thanks for using the Content Strategy Tool! 👋
+
+================================================================================
+                           END OF EXAMPLES
+================================================================================
